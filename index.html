@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Зөв Хооллолт</title>
+  <link rel="stylesheet" href="css/styles.css"
+</head>
+
+<script type="text/javascript">
+  function BMI() {
+    var h = document.getElementById('height').value;
+    var w = document.getElementById('weight').value;
+    var index = w / (h / 100 * h / 100);
+    var bmio = (index.toFixed(2));
+    document.getElementById("result").innerHTML = "Таны жингийн индекс: " + bmio;
+    if (bmio < 18.5) {
+      document.getElementById("result_info").innerHTML = " Та жингийн дутагдалтай байна. Шим тэжээлээр баялаг хоол тогтмол баг багаар хэрэглэнэ үү.";
+    }
+    if (bmio >= 18.5 && bmio < 25) {
+      document.getElementById("result_info").innerHTML = " Таны жин хэвийн байна. ";
+    }
+    if (bmio >= 25) {
+      document.getElementById("result_info").innerHTML = " Та жингийн илүүдэлтэй байна. Буруу хоолны зуршлаа засч идэвхтэй хөдөлгөөн тогтмол хийнэ үү.";
+    }
+  }
+
+</script>
+
+<body>
+  <div>
+    <h2>Зөв хоололт</h2>
+    <p class="text">Өндөр(см)</p>
+    <input type="text" id="height" name="" value="">
+    <p class="text">Жин(кг)</p>
+    <input type="text" id="weight" name="" value="">
+    <p id="result"></p>
+    <p id="result_info"></p>
+    <button id="btn" align="left" onclick="BMI()">Оруулах</button>
+    <p id="info">
+
+    </p>
+  </div>
+
+
+</body>
+
+</html>

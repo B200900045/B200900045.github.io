@@ -1,0 +1,70 @@
+body{
+  text-align: center;
+  font-family: sans-serif;
+  background-image: linear-gradient(120deg, #D4ECDD, #FFF8E5);
+  min-height: 100vh; /*view point height*/
+  margin: 0;
+  padding: 0;
+}
+div{
+  transform: translate(-50%, -50%);
+  width: 25rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #152D35;
+  padding: 1.25rem;
+  border-radius: 0.625rem; /*1rem equals the font size of the html element*/
+
+}
+h2{
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: #FFF8E5;
+}
+.text{
+  color: #FFF8E5;
+  text-align: left;
+  margin-left: 9.375rem;
+}
+#weight, #height{
+  color: #FFF8E5;
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 200;
+  outline: none;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #345B63;
+  width: 12.5rem;
+}
+
+  #result{
+    color: #FFF8E5;
+  }
+  #result_info{
+    color: #D4ECDD;
+
+
+  }
+  #btn{
+    font-family: inherit;
+    margin-top: 0.625rem;
+    border: none;
+    color: #fff;
+    background-color: #345B63;
+    width: 9.375rem;
+    padding: 0.625rem;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+
+  }
+  #btn:hover{
+    box-shadow: 1px 1px 10px #112031;
+  }
+
+  #info{
+    font-size: 12px;
+    font-family: inherit;
+  }
